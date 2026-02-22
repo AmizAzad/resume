@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer - Amiz Azad</title>
+    <title>Senior Software Engineer - Amiz Azad</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -12,12 +15,13 @@
 	<link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 <body>
+    <div class="page-wrapper">
     <header>
 	
         <div class="profile-card">
             <div class="profile-details">
                 <h1>AMIZ AZAD</h1>
-                <h3>SOFTWARE ENGINEER</h3>
+                <h3>SENIOR SOFTWARE ENGINEER</h3>
             </div>
 			
             <div class="profile-image">
@@ -52,18 +56,32 @@
         <section id="resume-download">
             <a href="pdf/CV_SoftwareEngineer_AmizAzad.pdf" download="CV_SoftwareEngineer_AmizAzad.pdf" class="download-button">Download Resume [.pdf]</a>
         </section>
+		
+		<nav class="primary-nav" aria-label="Section navigation">
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#academic-projects">Academic Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+				<li><a href="#certifications">Certifications</a></li>
+                <li><a href="#volunteer-experience">Volunteer Experience</a></li>
+            </ul>
+        </nav>
     </header>
 	
     <main>
-        <section id="summary">
+        <section id="summary" class="section-card">
             <h2>Summary</h2>
-            <p>Software Engineer with 6 years of experience in designing and developing applications, 
+            <p>Software Engineer with 6+ years of experience in designing and developing applications, 
 			reviewing program functionality, establishing system improvements, testing for bugs, providing quality 
 			assurance according to business specifications and application standards and effectively communicating 
-			the project status. Experienced in AdTech, Banking, Financial Services, Insurance and Telecom domains.</p>
+			the project status. Experienced in RegTech, SupTech, AdTech, Banking, Financial Services, Insurance and 
+            Telecom domains.</p>
         </section>
 		
-        <section id="skills">
+        <section id="skills" class="section-card">
             <h2>Skills</h2>
             <ul class="skills-list">
 				<li>Java 8 / Core Java | </li>
@@ -92,9 +110,19 @@
             </ul>
         </section>
 		
-        <section id="work-experience">
+        <section id="work-experience" class="section-card timeline">
             <h2>Work Experience</h2>
 			<!-- Add more work experiences as needed -->
+            <article>
+                <h3>Senior Software Engineer</h3>
+                <h4>IRIS RegTech Solutions Limited - Navi Mumbai (on-site)</h4>
+                February 2026 - Present
+                <ul>
+					<li>Architecting AI-augmented SupTech solutions for global reserve banks, streamlining mission-critical data filing and automated regulatory validation.</li>
+                    <!-- Add more responsibilities as needed -->
+                </ul>
+            </article>
+
 			<article>
                 <h3>Software Engineer</h3>
                 <h4>Adform - Mumbai (on-site)</h4>
@@ -154,7 +182,7 @@
             </article>
         </section>
 		
-        <section id="education">
+        <section id="education" class="section-card timeline">
             <h2>Education</h2>
 			<!-- Add more education details as needed -->
             <article>
@@ -170,7 +198,7 @@
             </article>
         </section>
 		
-        <section id="academic-projects">
+        <section id="academic-projects" class="section-card">
             <h2>Academic Projects</h2>
             <article>
                 <ul>
@@ -182,7 +210,7 @@
             </article>
         </section>
 		
-        <section id="achievements">
+        <section id="achievements" class="section-card">
             <h2>Achievements</h2>
             <ul>
 				<!-- Add more achievements as needed -->
@@ -191,7 +219,7 @@
             </ul>
         </section>
 		
-        <section id="certifications">
+        <section id="certifications" class="section-card">
             <h2>Certifications</h2>
             <ul>
 				<!-- Add more certifications as needed -->
@@ -204,7 +232,7 @@
             </ul>
         </section>
 		
-        <section id="volunteer-experience">
+        <section id="volunteer-experience" class="section-card">
             <h2>Volunteer Experience</h2>
             <article>
                 <ul>
@@ -216,9 +244,12 @@
         </section>
     </main>
 	
+	<button id="back-to-top" aria-label="Back to top">▲ Top</button>
+	
     <footer>
-        <p>&copy; 2024 Amiz Azad</p>
+        <p>&copy; 2026 Amiz Azad</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=1"></script>
+	</div>
 </body>
 </html>
