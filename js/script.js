@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.documentElement.classList.add("js");
     const hamburger = document.querySelector(".hamburger-menu");
     const dropdown = document.querySelector(".dropdown");
     const backToTop = document.getElementById("back-to-top");
@@ -43,28 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
-    /* Section reveal on scroll (classic fade-in) */
-    if ("IntersectionObserver" in window && sectionCards.length) {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("in-view");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                threshold: 0.15,
-            }
-        );
-
-        sectionCards.forEach((card) => observer.observe(card));
-    } else {
-        // Fallback: show all if IntersectionObserver is unavailable
-        sectionCards.forEach((card) => card.classList.add("in-view"));
-    }
 
     /* Scrollspy: highlight active section in navigation */
     const sections = Array.from(document.querySelectorAll("main section[id]"));

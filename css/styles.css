@@ -173,17 +173,6 @@ section {
     pointer-events: none;
 }
 
-.js .section-card {
-    opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.js .section-card.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 h2 {
     margin-top: 0;
     margin-bottom: 10px;
